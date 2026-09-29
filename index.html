@@ -214,6 +214,33 @@
                 height: 20px;
             }
         }
+   /* --- โค้ดอนิเมชันป้าย NEW ดุ๊กดิ๊ก --- */
+	@keyframes pulse-new {
+  	    0% {
+    	        transform: scale(1);
+   	        box-shadow: 0 0 0 0 rgba(231, 76, 60, 0.7);
+ 	    }
+  	    70% {
+   	        transform: scale(1.1);
+   	        box-shadow: 0 0 10px 4px rgba(231, 76, 60, 0);
+  	    }
+ 	    100% {
+    	       transform: scale(1);
+   	       box-shadow: 0 0 0 0 rgba(231, 76, 60, 0);
+  	    }
+	}
+
+.badge-new {
+  background-color: #e74c3c;
+  color: white;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 3px 8px;
+  border-radius: 12px;
+  display: inline-block;
+  margin-left: 5px;
+  animation: pulse-new 1.5s infinite; /* สั่งให้ขยับวับวาววนไปเรื่อยๆ */
+}
     </style>
 </head>
 <body>
